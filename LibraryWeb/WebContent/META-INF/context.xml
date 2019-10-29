@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<Context docBase="UniLibraryWeb" path="/UniLibraryWeb" reloadable="true">
+	
+	<Resource name="jdbc/UniLibraryDS" auth="Container"
+		type="javax.sql.DataSource" maxActive="100" maxIdle="30"
+		maxWait="10000" username="root" password="mysql"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://mysql:3306/uni_library_db?autoReconnect=true" />
+
+</Context>
