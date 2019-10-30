@@ -20,7 +20,7 @@
 		<repository>
 			<id>nexus-repo</id>
 			<name>My releases</name>
-			<url>http://192.168.80.9:32771/repository/maven-releases/</url>
+			<url>http://192.168.80.9:32769/repository/maven-releases/</url>
 
 		</repository>
 
@@ -28,13 +28,13 @@
 		<snapshotRepository>
 			<id>nexus-repo</id>
 			<name>My snapshots</name>
-			<url>http://192.168.80.9:32771/repository/maven-snapshots/</url>
+			<url>http://192.168.80.9:32769/repository/maven-snapshots/</url>
 
 		</snapshotRepository>
 
 		<site>
 			<id>nexus-repo</id>
-			<url>dav:http://192.168.80.9:32771/repository/sites/library</url>
+			<url>dav:http://192.168.80.9:32769/repository/sites/library</url>
 		</site>
 
 
@@ -134,8 +134,13 @@
 	    <artifactId>hibernate-ehcache</artifactId>
 	    <version>5.4.7.Final</version>
 	</dependency>
-	
-  
+
+
+	<dependency>
+		<groupId>fr.orsys.mediatheque</groupId>
+		<artifactId>library-dao</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
   </dependencies>
   
 </project>
