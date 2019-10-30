@@ -34,7 +34,7 @@
 
 		<site>
 			<id>nexus-repo</id>
-			<url>dav:http://192.168.80.9:32771/repository/sites/</url>
+			<url>dav:http://192.168.80.9:32771/repository/sites/library</url>
 		</site>
 
 
@@ -52,8 +52,17 @@
   		<plugin>
 		    <groupId>org.apache.maven.plugins</groupId>
 		    <artifactId>maven-site-plugin</artifactId>
-		    <version>3.8.2</version>		  		
+		    <version>3.8.2</version>
+		    <dependencies>
+					<dependency>
+						<groupId>org.apache.maven.wagon</groupId>
+						<artifactId>wagon-webdav-jackrabbit</artifactId>
+						<version>2.6</version>
+					</dependency>
+				</dependencies>		  		
   		</plugin>
+  		
+  		
   	
   	</plugins>
   
